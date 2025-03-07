@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import TaskList from "./TaskList";
 import PomodoroTimer from "./PomodoroTimer";
 import AIInsights from "./AIInsights";
+import ProductivityScore from "./ProductivityScore";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -309,6 +310,9 @@ export default function Dashboard() {
                     <div className="text-xs text-muted-foreground">
                       Completed Today
                     </div>
+                  </div>
+                  <div className="bg-primary/10 p-3 rounded-lg col-span-2 mt-3">
+                    <ProductivityScore minimal={true} />
                   </div>
                 </div>
               </div>
