@@ -177,7 +177,12 @@ export default function PomodoroTimer({ minimal = false }: PomodoroTimerProps) {
   return (
     <div className="space-y-6">
       <div className="flex justify-between items-center">
-        <h2 className="text-2xl font-semibold">Pomodoro Timer</h2>
+        <div>
+          <h2 className="text-2xl font-semibold">Pomodoro Timer</h2>
+          <p className="text-sm text-muted-foreground">
+            Stay focused with timed work sessions
+          </p>
+        </div>
         <Dialog open={isSettingsOpen} onOpenChange={setIsSettingsOpen}>
           <DialogTrigger asChild>
             <Button variant="outline" size="icon">

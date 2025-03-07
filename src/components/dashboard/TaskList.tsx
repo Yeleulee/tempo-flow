@@ -250,7 +250,12 @@ export default function TaskList({ minimal = false }: TaskListProps) {
   return (
     <div className="space-y-6">
       <div className="flex justify-between items-center">
-        <h2 className="text-2xl font-semibold">Your Tasks</h2>
+        <div>
+          <h2 className="text-2xl font-semibold">Your Tasks</h2>
+          <p className="text-sm text-muted-foreground">
+            Manage and organize your daily activities
+          </p>
+        </div>
         <Dialog open={isAddDialogOpen} onOpenChange={setIsAddDialogOpen}>
           <DialogTrigger asChild>
             <Button>

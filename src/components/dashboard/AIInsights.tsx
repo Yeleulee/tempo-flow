@@ -73,7 +73,12 @@ export default function AIInsights() {
 
         <TabsContent value="insights" className="mt-4">
           <div className="space-y-6">
-            <h2 className="text-2xl font-semibold">AI Insights</h2>
+            <div>
+              <h2 className="text-2xl font-semibold">AI Insights</h2>
+              <p className="text-sm text-muted-foreground">
+                Personalized productivity recommendations
+              </p>
+            </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {mockInsights.map((insight, index) => (
